@@ -1,0 +1,94 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.display-none {
+  display: none;
+}
+
+#result-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#result-container h2 {
+  color: #333;
+}
+#result-container h4 {
+  color: #333;
+}
+#semester-results p {
+  margin: 0;
+}
+
+#semester-results span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#cumulative-gpa,
+#total-credit-hours {
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#result-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#cgpa-calc {
+  margin-left: 50%;
+}

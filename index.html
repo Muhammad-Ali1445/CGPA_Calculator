@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CGPA Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>CGPA Calculator</h1>
+
+      <div class="form-row">
+        <div class="col">
+          <select id="semester-select" class="form-control">
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+            <option value="7">Semester 7</option>
+            <option value="8">Semester 8</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <input
+            id="course-code"
+            class="form-control"
+            type="text"
+            placeholder="Course Name"
+          />
+        </div>
+
+        <div class="col">
+          <input
+            id="unit-load"
+            class="form-control"
+            type="number"
+            placeholder="Credit Hours"
+            min="1"
+            max="15"
+          />
+        </div>
+
+        <div class="col">
+          <input
+            id="calculatedGradePoints"
+            class="form-control"
+            type="number"
+            placeholder="Marks"
+            min="0"
+            max="100"
+          />
+        </div>
+
+        <div class="col">
+          <input
+            id="add"
+            class="btn btn-primary"
+            type="button"
+            value="Add"
+            onclick="addCourse()"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <input
+            id="calc-gpa"
+            class="btn btn-success"
+            type="button"
+            value="Calc GPA"
+            onclick="calculateSemesterGpa()"
+          />
+        </div>
+
+        <div class="col">
+          <input
+            id="cgpa-calc"
+            class="btn btn-warning"
+            type="button"
+            value="Calc CGPA"
+            onclick="calculateCGPA()"
+          />
+        </div>
+      </div>
+
+      <div id="result-container">
+        <h2>Results</h2>
+        <div id="semester-results"></div>
+        <h4>Cumulative GPA: <span id="cumulative-gpa"></span></h4>
+        <p>
+          Total Credit Hours Earned So Far:
+          <span id="total-credit-hours"></span>
+        </p>
+        <p>Total Courses studied So Far: <span id="total-courses"></span></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
